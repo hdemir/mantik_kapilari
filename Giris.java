@@ -124,4 +124,15 @@ public class giris extends Activity {
 				}
 			});
 		
-
+	Button tamcik=(Button ) findViewById(R.id.tamcikarici);
+			tamcik.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					Intent i=new Intent(getApplicationContext(), tamcikar.class);
+					startActivity(i);
+				}
+			});
+			}
+			
+		}
