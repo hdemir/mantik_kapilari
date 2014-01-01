@@ -18,7 +18,7 @@ public class exnor extends Activity{
 		final ImageView giris1=(ImageView) findViewById(R.id.led1);
 		final ImageView giris2=(ImageView) findViewById(R.id.led2);
 		final ImageView ledcikis=(ImageView) findViewById(R.id.ledcikis);
-		final TextView txsonuc=(TextView) findViewById(R.id.textcik);
+		
 		
 		but1.setOnClickListener(new View.OnClickListener() {
 			
