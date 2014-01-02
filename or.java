@@ -60,7 +60,12 @@ but2.setOnClickListener(new View.OnClickListener() {
 				}
 				else
 				{
-					
+				tus2=false;
+					but2.setText("0");
+					giris2.setImageDrawable(getResources().getDrawable(R.raw.miniledy));
+					if (tus1==false){
+					ledcikis.setImageDrawable(getResources().getDrawable(R.raw.miniledy));
+					txsonuc.setText("0");}	
 				}
 			}
 		});
