@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/genelarkaplan"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@raw/dff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        android:text="B"
+        android:textAppearance="?android:attr/textAppearanceLarge"   android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/but1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/led2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/led1"
+        android:src="@raw/miniledy" />
+
+    <TextView
+        android:id="@+id/textcik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ledcikis"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@raw/dffyazi"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/but2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="21dp"
+        android:src="@raw/tablod" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:scaleType="centerInside"
+        android:src="@raw/dsema" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="25dp" 
+       >
+
+        <LinearLayout
+            android:layout_width="292dp"
+            android:layout_height="145dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Temel RS FF’den üretilen bir FF çeşididir. Tek bir senkron kontrol girişine sahip olan D
+(Data) tipi FF devresidir. D tipi FF’de oluşan işlemler basittir; Q çıkışı
+tetikleme sinyalinin gelmesi ile D kontrol girişinin sahip olduğu değeri alır.
+Bunun anlamı; D=0 iken, tetikleme sinyalinin gelmesi ile Q çıkışı ‘0’ değerine sahip olur
+demektir. D=0 durumu devam ettiği sürece, ‘Clk’ sinyalinin durumu değişse bile Q=0
+değerini korur. D=1 değerini alması durumunda, ilk gelen tetikleme sinyalinin pozitif
+kenarında Q=1 değerini alır. Burada, Q çıkışının yalnızca tetikleme sinyalinin pozitif
+kenarlarında durum değiştirdiği bilinmelidir."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/textcik"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/but2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/but1"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/led1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/imageView1"
+        android:background="@raw/miniledy"
+        android:src="@raw/miniledy" />
+
+    <ImageView
+        android:id="@+id/ledcikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toLeftOf="@+id/textcik"
+        android:src="@raw/miniledy" />
+
+</RelativeLayout>
