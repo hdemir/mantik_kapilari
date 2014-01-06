@@ -1,4 +1,0 @@
-mantik_kapilari
-===============
-
-Projemiz
