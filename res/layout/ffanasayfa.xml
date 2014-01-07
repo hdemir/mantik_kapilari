@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/genelarkaplan"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                             "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1" />
+
+   <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="75dp" 
+       >
+
+        <LinearLayout
+            android:layout_width="292dp"
+            android:layout_height="145dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 	J-K Flip-Flop, RS FF’lerin belirsizlik durumunu ortadan kaldırmak amacıyla geliştirilmiş
+FF çeşididir. Tanımsız durumların tanımlı hale geldiği J-K FF’lerde, J ve K girişleri FF’i
+kurmak ve silmek için S ve R girişleri gibi davranır (Şekil 9.10.a). J girişinin S’ye, K
+girişinin R’ye denk geldiği J-K FF’lerde; J=K=1 durumunda iken, tetikleme sinyalinin her
+pozitif kenarı ile çıkış bir önceki durumun tersi değerini alır. Yani Q=1 ise 0’a, Q=0 ise 1’e
+geçiş olur. Bu işlem, ‘toggle’ (ters çevirme) olarak isimlendirilir. Bu işlemin devamlı
+gerçekleştirilmesi için, J=1 ve K=1 durumunda bırakılır.
+	Q=0 iken, J=K=0 girişlerinin uygulanması ile çıkış bir önceki durumun aynısı olur. Bu
+durum Q(t+1) = Q(t) şeklinde özetlenebilir.
+J=0, K=1 ve J=1, K=0 giriş durumlarında çıkış J değerlerini izler. Yani J=0, K=1
+durumunda Q=0 ve J=1, K=0 durumunda Q=1 değerini alır.
+	J=0 ve K=1 iken; tetikleme sinyali (‘clk’ palsı) ile FF’nin Q=0 değerini alması durumu,
+‘Reset’ olarak tanımlanır. J=1, K=0 durumunda iken ‘Clk’ palsı ile Q=1 değerini alması
+durumu ise, ‘Set’ olarak belirtilir."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/srflip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jkflip"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/led1"
+        android:background="@raw/rsres" />
+
+    <Button
+        android:id="@+id/dflip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/srflip"
+        android:layout_alignBottom="@+id/srflip"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:background="@raw/dflipres" />
+
+    <Button
+        android:id="@+id/jkflip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/srflip"
+        android:background="@raw/jkflip" />
+
+    <Button
+        android:id="@+id/tflip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/srflip"
+        android:layout_toRightOf="@+id/srflip"
+        android:background="@raw/tflipres" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jkflip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@raw/genelff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/jkflip"
+        android:layout_marginLeft="14dp"
+        android:text="       " />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@raw/ffyazi"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/led1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@raw/yancubuk" />
+
+</RelativeLayout>
