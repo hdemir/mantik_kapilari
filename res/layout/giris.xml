@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/giris"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nand"
+        android:background="@raw/orres" />
+
+    <Button
+        android:id="@+id/nor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/or"
+        android:layout_below="@+id/or"
+        android:background="@raw/norres" />
+
+    <Button
+        android:id="@+id/exor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/nor"
+        android:layout_below="@+id/nor"
+        android:background="@raw/exorres" />
+
+    <Button
+        android:id="@+id/exnor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/exor"
+        android:layout_below="@+id/exor"
+        android:background="@raw/exnorres" />
+
+    <Button
+        android:id="@+id/not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/exnor"
+        android:layout_below="@+id/exnor"
+        android:background="@raw/notres" />
+
+    <Button
+        android:id="@+id/and"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="108dp"
+        android:background="@raw/andres" />
+
+    <Button
+        android:id="@+id/nand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/and"
+        android:background="@raw/nandres" />
+
+    <Button
+        android:id="@+id/flipflop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yarimtoplayici"
+        android:layout_alignTop="@+id/and"
+        android:background="@raw/flipflopres" />
+
+    <Button
+        android:id="@+id/yarimtoplayici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nand"
+        android:layout_alignBottom="@+id/nand"
+        android:layout_alignParentRight="true"
+        android:background="@raw/yarimtoplayicires" />
+
+    <Button
+        android:id="@+id/yarimcikarici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/or"
+        android:layout_alignBottom="@+id/or"
+        android:layout_alignLeft="@+id/yarimtoplayici"
+        android:background="@raw/yarimcikaricires" />
+
+    <Button
+        android:id="@+id/tamtoplayici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nor"
+        android:layout_alignBottom="@+id/nor"
+        android:layout_alignLeft="@+id/yarimcikarici"
+        android:background="@raw/tamtoplayicires" />
+
+    <Button
+        android:id="@+id/tamcikarici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tamtoplayici"
+        android:layout_below="@+id/nor"
+        android:background="@raw/tamcikaricires" />
+
+</RelativeLayout>
